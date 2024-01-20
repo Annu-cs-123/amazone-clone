@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Login from "./components/Login";
 import Form from "./components/signup components/Form";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' element={[<Header />, <Home />]}>
 
           </Route>
+          <Route path="/checkout" element={<Checkout />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path="/signUp" element={<Form />}></Route>
         </Routes>
